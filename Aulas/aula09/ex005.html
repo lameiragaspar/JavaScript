@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com o DOM</title>
+</head>
+<style>
+    body{
+        background-color: #02378698;
+        color:#fcfcfc;
+        font: normal 18px Arial;
+    }
+</style>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em J.S</p>
+    <div class="msg">
+        Click em Mim
+    </div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        //p1.style.color = 'Blue'
+        //corpo.style.backgroundColor = 'black'
+        //window.document.write(p1.innerHTML)
+
+        //var div = window.document.getElementById('msg') posso fazer o q está abaixo
+        var div = document.querySelector('div.msg')//Recomendado
+        div.style.background = 'black'
+        div.style.padding = '10px'
+        div.style.position = 'absolute'
+        div.style.borderRadius = '9px'
+        div.innerHTML = 'Posso usar o DOM para modificar qualquer parte do meu site'
+    </script>
+</body>
+</html>

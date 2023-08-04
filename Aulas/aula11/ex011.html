@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+    <style>
+        body,input{
+            font: normal 18px Arial;
+            text-align: center;
+            margin-top: 10px;
+        }
+        input{
+            width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é Angolano?</h1>
+    <div>
+        Informe seu país:
+        <input type="text" name="txtpais" id="txtpais">
+    </div>
+    <div>
+        <input type="button" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="msg">
+        Preencha o Campo acima
+    </div>
+    <script>
+        function verificar(){
+            var pais = window.document.querySelector('input#txtpais')
+            paí_s = String(pais.value)
+
+            var msg = window.document.getElementById('msg')
+            
+            if(paí_s.length == 0){
+                
+                alert('Informe Seu país!')
+
+            } else if(paí_s == 'Angola'){
+                msg.innerHTML = `Morando em ${paí_s} você é `
+                msg.innerHTML += '<strong>Angolano</strong>'
+            } else{
+                msg.innerHTML = `Morando em ${paí_s} você é `
+                msg.innerHTML += '<strong>Estrangeiro</strong>'
+            }
+
+        }
+    </script>
+</body>
+</html>

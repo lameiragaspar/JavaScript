@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <title>Modelo para os Exercícios</title>
+    <title>Verificador de Idade</title>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de Idade</h1>
     </header>
-    <section>
-        <div>
-            Section com divs
-        </div>
-        <div>
+    <main>
+        <section><!--Formulário-->
+            <form action="verificar">
+                <div>
+                    <label for="i_ano"><strong>Ano de Nascimento:</strong> </label>
+                    <input type="number" name="ano" id="i_ano">
+                </div>
 
-        </div>
-    </section>
+                <div>
+                    <strong>Sexo: </strong>
+                    <label for="masculino">Macsulino</label>
+                    <input type="radio" name="sexo" id="masculino">
+
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="sexo" id="feminino">
+                </div>
+            </form>
+            <div><!--Fotos carregadas-->
+                
+            </div>
+        </section>
+        
+    </main>
     <footer>
         <p>&copy; Pedro_Lameira <strong>Footer</strong></p>
     </footer>

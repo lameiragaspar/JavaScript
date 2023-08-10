@@ -7,22 +7,29 @@ function verificar(){
     var ano = Number(ano_nas.value)
     //Peguei o ano do sistema
 
+    var resultado = window.document.querySelector('div#resultado')
+    //Aparecerá o resultado caso todas as condições sejam satisfeitas
+
     if(ano_nas.value.length == 0 || ano > ano_actual){
-        window.alert('Verifque os dados e tente novamente')
+        window.alert('[ERRO!] Verifique o seu ANO DE NASCIMENTO e tente novamente [ERRO!]')
     } else {
         var idade = (ano_actual - ano)
         var sexo = window.document.getElementsByName('rad_sexo')
         var genero = ''
-        if(genero == ''){
-            window.alert('Verifque os dados e tente novamente')
-        } else if(sexo[0].checked){
-            genero = 'Maculino'
+        if(sexo[0].checked){ //checked verifica se foi selecionado
+            genero = 'Homem'
+            resultado.innerHTML = (`Detectamos ${genero} de ${idade} anos`)
+            var imagem = window.document.querySelector('img#imagem')
+            //imagem.style.display = 'block'
+
+
         } else if(sexo[1].checked /*Poderia ocultar*/){
-            genero = 'Feminino'
+            genero = 'Mulher'
+            resultado.innerHTML = (`Detectamos ${genero} de ${idade} anos`)
+
+        } if(genero == ''){
+            window.alert('[ERRO!] Verifique o seu SEXO e tente novamente [ERRO!]')
         } 
     }
-
-    var resultado = window.document.querySelector('div#resultado')
-
-    resultado.innerHTML = (` estámos no ano ${ano_actual} idade ${idade} e seu sexo é ${genero}`)
+   
 }

@@ -64,6 +64,10 @@ input.verifica:hover{
     transition: .5s;
 }
 
+div > img#imagem{
+    display: none;
+}
+
 footer{
     color: white;
     margin-top: 20px;

@@ -13,26 +13,29 @@
     <main>
         <section><!--Formulário-->
             <form action="verificar">
-                <div class="dados">
+
+                <div class="dados"> <!--Ano de nascimento-->
                     <label for="i_ano"><strong>Ano de Nascimento:</strong> </label>
                     <input type="number" name="ano" id="i_ano">
-                </div>
+                </div><!--Ano de nascimento-->
 
-                <div class="dados">
+                <div class="dados"> <!--Sexo da Pessoa-->
                     <strong>Sexo: </strong>
-                    <label for="masculino">Macsulino</label>
-                    <input type="radio" name="sexo" id="masculino"> <strong>;</strong>
+                    <label for="mascu">Macsulino</label>
+                    <input type="radio" name="rad_sexo" id="mascu">
 
-                    <label for="feminino">Feminino</label>
-                    <input type="radio" name="sexo" id="feminino">
-                </div>
-                <div>
+                    <label for="femin">Feminino</label>
+                    <input type="radio" name="rad_sexo" id="femin">
+                </div><!--Sexo da Pessoa-->
+
+                <div><!--Botão verificar-->
                     <input class="verifica" type="button" value="Verificar" onclick="verificar()">
-                </div>
+                </div><!--Botão verificar-->
+
             </form>
-            <div><!--Fotos carregadas-->
-                
-            </div>
+            <div id="resultado"><!--Fotos carregadas-->
+                Preencha os dados acima para ver o resultado!
+            </div><!--Fotos carregadas-->
         </section>
         
     </main>

@@ -26,13 +26,24 @@ main{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
-form > div.dados{
-    margin-bottom: 20px;
-    text-align: left;
+section > form > div> input#i_ano{
+    width: 90px;
+    border: 1px solid #000000a9;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 section > form > div > label:hover, input.verifica{
     cursor: pointer;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+form > div.dados{
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 input.verifica{
@@ -42,12 +53,15 @@ input.verifica{
     border-radius: 5px;
     background-color: #27849b;
     color: white;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px #1414146b;
 }
 
 input.verifica:hover{
     background-color: #1b67a5;
-    transition: .5s;
     border-radius: 7px;
+    font-weight: normal;
+    transition: .5s;
 }
 
 footer{

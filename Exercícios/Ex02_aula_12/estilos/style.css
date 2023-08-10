@@ -26,8 +26,28 @@ main{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
-section > form > div > label:hover{
+form > div.dados{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+section > form > div > label:hover, input.verifica{
     cursor: pointer;
+}
+
+input.verifica{
+    width: 90px;
+    border: 1px solid #000000a9;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #27849b;
+    color: white;
+}
+
+input.verifica:hover{
+    background-color: #1b67a5;
+    transition: .5s;
+    border-radius: 7px;
 }
 
 footer{

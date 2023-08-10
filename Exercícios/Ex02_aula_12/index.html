@@ -13,18 +13,21 @@
     <main>
         <section><!--Formulário-->
             <form action="verificar">
-                <div>
+                <div class="dados">
                     <label for="i_ano"><strong>Ano de Nascimento:</strong> </label>
                     <input type="number" name="ano" id="i_ano">
                 </div>
 
-                <div>
+                <div class="dados">
                     <strong>Sexo: </strong>
                     <label for="masculino">Macsulino</label>
-                    <input type="radio" name="sexo" id="masculino">
+                    <input type="radio" name="sexo" id="masculino"> <strong>;</strong>
 
                     <label for="feminino">Feminino</label>
                     <input type="radio" name="sexo" id="feminino">
+                </div>
+                <div>
+                    <input class="verifica" type="button" value="Verificar" onclick="verificar()">
                 </div>
             </form>
             <div><!--Fotos carregadas-->

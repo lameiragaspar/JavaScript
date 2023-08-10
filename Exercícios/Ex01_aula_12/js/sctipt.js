@@ -2,7 +2,7 @@ function carregar(){
     var agora = new Date()
     var hora = agora.getHours() 
     //Traz a data do sisema
-    
+
     var div_hora = window.document.querySelector('div#hora') 
     //Chamei a div que contém a msg d que horas são
     div_hora.innerHTML = `Agora são <strong>${hora}</strong> horas` 

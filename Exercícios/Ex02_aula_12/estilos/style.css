@@ -46,6 +46,10 @@ form > div.dados{
     text-align: left;
 }
 
+input#mascu{
+    margin-right: 20px;
+}
+
 input.verifica{
     width: 90px;
     border: 1px solid #000000a9;
@@ -64,7 +68,7 @@ input.verifica:hover{
     transition: .5s;
 }
 
-div > img#imagem{
+img#imagem{
     display: none;
 }
 

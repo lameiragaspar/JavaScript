@@ -26,11 +26,11 @@ function verificar(){
                 img.setAttribute('src','fotos/2-5-homem.png')
             }else if(idade <= 10){
                 img.setAttribute('src','fotos/7-10-homem.png')
-            }else if(idade <= 18 ){
-
             }else if(idade <= 15 ){
 
-            } else if(idade <= 23){
+            }else if(idade <= 23 ){
+
+            }else if(idade <= 34){
                 
             }
             

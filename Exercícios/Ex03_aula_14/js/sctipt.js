@@ -14,13 +14,26 @@ function contar(){
     }else if(pas.value.length == 0 || passo == 0){
         window.alert('[PASSO INVÁLIDO!] Considerando passo [1]')
         passo = 1
-    } else{
-        resultado.innerHTML = ''
         if(inicio < final){
-            var cont = inicio
+            resultado.innerHTML = ''
             for(var cont = inicio; cont <= final; cont += passo){
                 resultado.innerHTML += `${cont}...`
             }
-        }   
-    }     
+        }else if(inicio > final){
+            resultado.innerHTML = ''
+            for(var cont = inicio; cont >= final; cont-=passo){
+                resultado.innerHTML += `${cont}...`
+            }
+        }
+    }else if(inicio < final){
+        resultado.innerHTML = ''
+        for(var cont = inicio; cont <= final; cont += passo){
+            resultado.appendChild(`${cont}...`)
+        }
+    } else{
+        resultado.innerHTML = ''
+        for(var cont = inicio; cont >= final; cont-=passo){
+            resultado.appendChild(`${cont}...`)
+        }
+    } 
 }

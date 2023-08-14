@@ -26,6 +26,32 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
+section > div > p{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+section > div > p > input{
+    width: 80px;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p.contar{
+    text-align: center;
+}
+p.contar > input{
+    width: 70px;
+    background-color: #5688b1;
+}
+
+p.contar > input:hover{
+    background-color: #1b67a5;
+    color: white;
+}
+
 footer{
     color: white;
     margin-top: 20px;

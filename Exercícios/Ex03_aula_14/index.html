@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <title>Modelo para os Exercícios</title>
+    <title>Vamos Contar</title>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Vamos Contar</h1>
     </header>
     <section>
         <div>
-            Section com divs
+            <p>
+                <label for="i_inicio"><strong>Início:</strong></label>
+                <input type="number" name="i_inicio" id="i_inicio">
+            </p>
+            <p>
+                <label for="i_fim"><strong>Fim:</strong></label>
+                <input type="number" name="i_fim" id="i_fim">
+            </p>
+            <p>
+                <label for="i_passo"><strong>Passo:</strong></label>
+                <input type="number" name="i_passo" id="i_passo" min="1">
+            </p>
+            <p class="contar">
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
         </div>
-        <div>
-
+        <div id="res">
+            Preparando contagem...
         </div>
     </section>
     <footer>
-        <p>&copy; Pedro_Lameira <strong>Footer</strong></p>
+        <p><strong>&copy; Pedro_Lameira </strong></p>
     </footer>
     <script src="JS/sctipt.js"></script>
 </body>

@@ -19,7 +19,7 @@ function contar(){
             for(var cont = inicio; cont <= final; cont += passo){
                 resultado.innerHTML += `${cont}...`
             }
-        }else if(inicio > final){
+        }else{
             resultado.innerHTML = ''
             for(var cont = inicio; cont >= final; cont-=passo){
                 resultado.innerHTML += `${cont}...`
@@ -28,12 +28,12 @@ function contar(){
     }else if(inicio < final){
         resultado.innerHTML = ''
         for(var cont = inicio; cont <= final; cont += passo){
-            resultado.appendChild(`${cont}...`)
+            resultado.innerHTML += `${cont}...`
         }
-    } else{
+    }else{
         resultado.innerHTML = ''
         for(var cont = inicio; cont >= final; cont-=passo){
-            resultado.appendChild(`${cont}...`)
+            resultado.innerHTML += `${cont}...`
         }
     } 
 }

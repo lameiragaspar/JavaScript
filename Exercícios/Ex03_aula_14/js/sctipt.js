@@ -8,32 +8,33 @@ function contar(){
 
     var resultado = window.document.querySelector('div#res')
     
-
     if(ini.value.length == 0 || fim.value.length == 0){
         window.alert('[Inpossível Contar!] Verifique os dados e tente novamente!')
+        resultado.innerHTML = 'Impossível contar'
     }else if(pas.value.length == 0 || passo == 0){
         window.alert('[PASSO INVÁLIDO!] Considerando passo [1]')
         passo = 1
         if(inicio < final){
-            resultado.innerHTML = ''
+            resultado.innerHTML = 'Contando: '
             for(var cont = inicio; cont <= final; cont += passo){
-                resultado.innerHTML += `${cont}...`
+                resultado.innerHTML += `${cont} \u{27A1} `
             }
         }else{
-            resultado.innerHTML = ''
+            resultado.innerHTML = 'Contando: '
             for(var cont = inicio; cont >= final; cont-=passo){
-                resultado.innerHTML += `${cont}...`
+                resultado.innerHTML += `${cont} \u{27A1} `
             }
         }
     }else if(inicio < final){
-        resultado.innerHTML = ''
+        resultado.innerHTML = 'Contando: '
         for(var cont = inicio; cont <= final; cont += passo){
-            resultado.innerHTML += `${cont}...`
+            resultado.innerHTML += `${cont} \u{27A1} `
         }
     }else{
-        resultado.innerHTML = ''
+        resultado.innerHTML = 'Contando: '
         for(var cont = inicio; cont >= final; cont-=passo){
-            resultado.innerHTML += `${cont}...`
+            resultado.innerHTML += `${cont} \u{27A1} `
         }
-    } 
+    }  
+    resultado.innerHTML += '\u{1F3C1}'
 }

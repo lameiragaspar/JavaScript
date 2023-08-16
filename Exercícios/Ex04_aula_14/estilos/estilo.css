@@ -26,6 +26,29 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
+section > div#dados > p{
+    margin-bottom:20px;
+}
+
+p> input{
+    width: 100px;
+    padding: 2px;
+    margin-right: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    
+}
+p > input#gerar{
+    background-color: #1b67a5;
+    font-weight: bold;
+}
+
+#gerar:hover{
+    color: white;
+    cursor:pointer;
+    background-color: #1380da;
+    transition: .5s;
+}
 footer{
     color: white;
     margin-top: 20px;

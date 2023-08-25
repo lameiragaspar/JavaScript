@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Analisador de Números</h1>
+    <section>
+        <div id="dados">
+            <p>
+                <label for="txt_num">Número entre (1 e 100):</label>
+                <input type="number" name="txt_num" id="txt_num" min="0" max="100" >
+                <input type="button" value="Adicionar" class="botão">
+            </p> <!--Usuário digita valores-->
+
+            <p id="select_val">
+                <select name="valores" id="valores" size="8">
+                    <option value="val_0">Adicione valores acima</option>
+                </select>
+            </p> <!--Valores dig aparecerão aqui-->
+
+            <p id="fin_a">
+                <input type="button" value="Finalizar" class="botão">
+            </p>
+        </div> <!--Dados-->
+
+        <div id="resultado">
+            
+        </div><!--Resultado-->
+
+    </section>
+    <footer>
+        <p>&copy; Pedro_Lameira</p>
+    </footer>
+    <script src="Js/script.js"></script>
+</body>
+</html>

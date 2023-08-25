@@ -1,5 +1,5 @@
 let num = [5, 2, 8, 7, 1]
-console.log(num )
+console.log(num)
 console.log(`O meu arrey/vector tem ${num.length} posições`)
 //console.log(`O primeiro valor do vector é ${num[0]}`)
 //console.log(`Se adicionar alguns elementos ele fica com ${num.push(3,4)} posições!`)
@@ -14,3 +14,4 @@ if(pos == -1){
 } else {
     console.log(`O valor está na posição ${pos}`)
 }
+console.log(typeof num)

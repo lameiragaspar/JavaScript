@@ -26,12 +26,17 @@ section{
     box-shadow:5px 4px 15px rgba(0, 0, 0, 0.432);
 }
 
-section > div > p#select_val, p#fin_a{
+section > div > p#select_val, p#fin_a, select > option{
     text-align: left;
 }
 
 section > div > p{
     margin: 10px;
+}
+
+select{
+    padding: 5px;
+    width: 150px;
 }
 
 p > input{

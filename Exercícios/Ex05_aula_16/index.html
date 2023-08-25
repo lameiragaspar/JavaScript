@@ -12,22 +12,22 @@
         <div id="dados">
             <p>
                 <label for="txt_num">Número entre (1 e 100):</label>
-                <input type="number" name="txt_num" id="txt_num" min="0" max="100" >
-                <input type="button" value="Adicionar" class="botão">
+                <input type="number" name="num_usu" id="txt_num" min="0" max="100" >
+                <input type="button" value="Adicionar" class="botão" onclick="adiciona()">
             </p> <!--Usuário digita valores-->
 
             <p id="select_val">
                 <select name="valores" id="valores" size="8">
-                    <option value="val_0">Adicione valores acima</option>
+                    
                 </select>
             </p> <!--Valores dig aparecerão aqui-->
 
             <p id="fin_a">
-                <input type="button" value="Finalizar" class="botão">
+                <input type="button" value="Finalizar" class="botão" onclick="mostra()">
             </p>
         </div> <!--Dados-->
 
-        <div id="resultado">
+        <div id="res">
             
         </div><!--Resultado-->
 

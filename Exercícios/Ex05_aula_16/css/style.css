@@ -47,12 +47,14 @@ input.botão{
     border-left: none;border-bottom-style:dashed;
     font-weight: bolder;
     cursor: pointer;
+    
 }
 
 input.botão:hover{
     border-bottom-style:solid;
     background-color: #328fdb;
     transition:.5s;
+    box-shadow: 2px 2px 5px #00000056;
 }
 
 footer{

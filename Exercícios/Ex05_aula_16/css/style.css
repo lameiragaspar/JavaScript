@@ -7,6 +7,11 @@
 body{
     background-color:#30a7f7;
 }
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
 section{
     background-color: white;
     max-width: 450px;
@@ -31,9 +36,10 @@ p > input{
     text-align: center;
 }
 p > select{
-    width: 30%;
+    width: 33%;
     margin-bottom: 10px;
     border-radius: 5p;
+    padding: 5px;
 }
 input.botão{
     cursor: pointer;

@@ -2,38 +2,29 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de Números</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <title>Verificador de Números</title>
 </head>
 <body>
-    <h1>Analisador de Números</h1>
     <section>
         <div id="dados">
             <p>
-                <label for="txt_num">Número entre (1 e 100):</label>
-                <input type="number" name="num_usu" id="txt_num" min="0" max="100" >
+                <label for="txt_nu">Digite um número entre 0 e 100: </label>
+                <input type="number" name="num_usu" id="txt_nu" min="0" max="100">
                 <input type="button" value="Adicionar" class="botão" onclick="adiciona()">
-            </p> <!--Usuário digita valores-->
-
-            <p id="select_val">
-                <select name="valores" id="valores" size="8">
-                    
-                </select>
-            </p> <!--Valores dig aparecerão aqui-->
-
-            <p id="fin_a">
-                <input type="button" value="Finalizar" class="botão" onclick="mostra()">
             </p>
-        </div> <!--Dados-->
-
+            <p id="add_fim">
+                <select name="num_selec" id="sel_num" size="8px"></select><br>
+                <input type="button" value="Finalizar" class="botão" onclick="finaliza()">
+            </p>
+        </div> <!--FIM DA DIV-->
         <div id="res">
-            
-        </div><!--Resultado-->
-
+            <p>Resultado</p>
+        </div> <!--FIM DA DIV-->
     </section>
     <footer>
-        <p>&copy; Pedro_Lameira</p>
+        <p><strong>Pedro_Lameira</strong></p>
     </footer>
     <script src="Js/script.js"></script>
 </body>

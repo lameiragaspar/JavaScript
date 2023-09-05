@@ -1,70 +1,51 @@
-@charset "UTF-8";
-
 *{
     margin: 0;
     padding: 0;
     border-radius: border-box;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 body{
-    background-color: #1b67a5;
+    background-color:#30a7f7;
 }
-
-h1{
-    margin: 10px 0;
-    color: white;
-}
-
 section{
     background-color: white;
-    width: 450px;
-    margin: auto;
-    border-radius: 10px;
+    max-width: 450px;
+    margin: 20px auto;
     padding: 10px;
-    box-shadow:5px 4px 15px rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 15px #0000007c;
 }
-
-section > div > p#select_val, p#fin_a, select > option{
+p#add_fim{
     text-align: left;
 }
-
-section > div > p{
-    margin: 10px;
+p{
+    margin: 10px 0;
 }
-
-select{
-    padding: 5px;
-    width: 150px;
-}
-
 p > input{
     width: 90px;
-    padding: 2px;
-    
+    background-color: #e4e4e493;
+    border: 1px solid #686868;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
 }
-
+p > select{
+    width: 30%;
+    margin-bottom: 10px;
+    border-radius: 5p;
+}
 input.botão{
-    background-color: #5babec;border-radius: 3px;
-    border-top: none;
-    border-right: none;
-    border-left: none;border-bottom-style:dashed;
-    font-weight: bolder;
     cursor: pointer;
-    
+    font-weight: bold;
 }
-
-input.botão:hover{
-    border-bottom-style:solid;
-    background-color: #328fdb;
-    transition:.5s;
-    box-shadow: 2px 2px 5px #00000056;
-}
-
-footer{
-    font-weight: bolder;
-    font-style: italic;
-    margin: 20px 0;
+.botão:hover{
+    background-color: #686868;
     color: white;
+    font-weight:bold;
+    transition: .3s;
+}
+footer{
+    text-align: center;
+    font-style: italic;
 }
